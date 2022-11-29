@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app
+  namespace: practica2022
+spec:
+  containers:
+  - image: tuxotron/demoapp:v1
+    name: app
