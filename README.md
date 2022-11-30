@@ -1,4 +1,4 @@
-# Practica 2022
+# Práctica 2022
 
 El objetivo de esta práctica es desplegar un Pod con la imagen tuxotron/demoapp:v1 en un espacio de nombres con seguridad restringida.
 
