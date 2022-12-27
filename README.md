@@ -17,6 +17,12 @@ spec:
     name: app
 ```
 
-PD: inicialmente dicho pod no se podrá desplegar debido a las restricciones de seguridad aplicada al espacio de nombres, por lo que habrá que modificar la definición del Pod para que éste pueda ser desplegado correctamente.
+PD: inicialmente dicho pod no se podrá desplegar debido a las restricciones de seguridad aplicada al espacio de nombres, por lo que habrá que modificar la definición del Pod para que éste pueda ser desplegado correctamente. Aseguraos que una vez el Pod es desplegado, éste está en modo `Running`:
+
+```
+$ kubectl get po -n practica2022
+NAME   READY   STATUS    RESTARTS   AGE
+app    1/1     Running   0          6s
+```
 
 La entraga de la práctica simplemente consistirá en el fichero pod.yaml modificado y los pasos con la creación del espacio de nombres con el perfil de seguridad aplicada y el despliegue de dicho Pod.
